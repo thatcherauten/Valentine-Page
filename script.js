@@ -94,7 +94,7 @@ function showMessage(response) {
     Reservation Location: UMI Japanese Steakhouse and Sushi Bar
     Reservation Time: 6:30 PM Central Time
     Suggested Attire: Whatever you want you're beautiful af 😍💯
-    (He will be wearing jeans and a lavender linen short-sleeve button-up)
+                      (He will be wearing jeans and a lavender linen short-sleeve button-up)
   `
     })
       .then(() => {
