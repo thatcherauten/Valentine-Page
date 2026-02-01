@@ -79,6 +79,19 @@ function showMessage(response) {
     yesAudio.currentTime = 0;
     yesAudio.play();        // start the yes song
 
+    emailjs.send("service_ynddsb9", "template_sxxy8ss", {
+      message: "",
+      from_page: "Valentine Page",
+      to_email: "thatcherauten@ksu.edu"
+    })
+    .then(() => {
+      console.log("Email sent successfully");
+    })
+    .catch((error) => {
+      console.error("Email failed:", error);
+    });
+
+
     // Remove the name message and the "No" button
     document.getElementById("name").remove();
     document.getElementById("no-button").remove();
