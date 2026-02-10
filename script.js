@@ -107,6 +107,7 @@ function showMessage(response) {
     // Remove the name message and the "No" button
     document.getElementById("name").remove();
     document.getElementById("no-button").remove();
+    document.getElementById("detailsButton").style.display = "inline-block";
     const videoElement = document.querySelector("video");
     if (videoElement) {
       videoElement.pause();
@@ -129,6 +130,11 @@ function showMessage(response) {
 
     // Remove the "Yes" button
     document.getElementById("yesButton").remove();
+
+    document.getElementById("detailsButton").addEventListener("click", () => {
+      document.getElementById("detailsBox").style.display = "block";
+    });
+
 
   }
 
