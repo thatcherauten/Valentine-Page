@@ -30,8 +30,7 @@ function showMessage(response) {
     noButton.style.top = randomY + "px";
 
     // Update text content and hide the name message
-    document.getElementById("question").textContent =
-      "😢";
+    document.getElementById("question").textContent = "😢";
     document.getElementById("name").style.display = "none";
 
     // Add a mouseover event listener to the "No" button
@@ -79,9 +78,37 @@ function showMessage(response) {
     yesAudio.currentTime = 0;
     yesAudio.play();        // start the yes song
 
+  //   emailjs.send("service_ynddsb9", "template_sxxy8ss", {
+  //     to_email: "thatcherauten@ksu.edu", // her email
+  //     from_name: "Thatcher Auten",
+  //     reply_to: "thatcherauten24@gmail.com",
+  //     message: `
+  //   A message from your bf has been received. Kindly respond at your earliest convenience.
+
+  //   Your Valentine's Day date with Thatcher Auten has been set! Details can be found below:
+
+  //   Date: February 14, 2026
+  //   Pickup Location: Smurthwaite Scholarship Hall
+  //   Pickup Time: 6:15 PM Central Time
+  //   Reservation Location: UMI Japanese Steakhouse and Sushi Bar
+  //   Reservation Time: 6:30 PM Central Time
+  //   Suggested Attire: Whatever you want you're beautiful af 😍💯
+  //                     (He will be wearing jeans and a lavender linen short-sleeve button-up)
+  // `
+  //   })
+  //     .then(() => {
+  //       console.log("Email sent successfully");
+  //     })
+  //     .catch((error) => {
+  //       console.error("Email failed:", error);
+  //     });
+
     // Remove the name message and the "No" button
     document.getElementById("name").remove();
     document.getElementById("no-button").remove();
+    document.getElementById("detailsButton").textContent = "Click for further details...";
+    document.getElementById("detailsButton").style.display = "block";
+    document.getElemementById("detailsButton").style.fontStyle = "normal";
     const videoElement = document.querySelector("video");
     if (videoElement) {
       videoElement.pause();
@@ -104,6 +131,13 @@ function showMessage(response) {
 
     // Remove the "Yes" button
     document.getElementById("yesButton").remove();
+
+    
+
+
   }
+  document.getElementById("detailsButton").addEventListener("click", () => {
+      document.getElementById("detailsBox").style.display = "block";
+    });
 
 }
