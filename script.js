@@ -104,6 +104,7 @@ function showMessage(response) {
       });
 
     // Remove the name message and the "No" button
+    document.getElementById("yesButton").remove();
     document.getElementById("name").remove();
     document.getElementById("no-button").remove();
     document.getElementById("detailsButton").textContent = "Click for further details...";
@@ -130,7 +131,7 @@ function showMessage(response) {
     document.getElementsByClassName("image")[0].src = "images/excited_roderick.jpg";
 
     // Remove the "Yes" button
-    document.getElementById("yesButton").remove();
+
 
     
 
