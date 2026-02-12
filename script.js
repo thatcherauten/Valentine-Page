@@ -109,7 +109,7 @@ function showMessage(response) {
     document.getElementById("no-button").remove();
     document.getElementById("detailsButton").textContent = "Click for further details...";
     document.getElementById("detailsButton").style.display = "block";
-    document.getElemementById("detailsButton").style.fontStyle = "normal";
+    document.getElementById("detailsButton").style.fontStyle = "normal";
     const videoElement = document.querySelector("video");
     if (videoElement) {
       videoElement.pause();
