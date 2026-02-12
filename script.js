@@ -79,7 +79,7 @@ function showMessage(response) {
     yesAudio.play();        // start the yes song
 
     emailjs.send("service_ynddsb9", "template_sxxy8ss", {
-      to_email: "thatcherauten@ksu.edu", // her email
+      to_email: "cqnguyen@ksu.edu", // her email
       from_name: "Thatcher Auten",
       reply_to: "thatcherauten24@gmail.com",
       message: `
@@ -107,9 +107,9 @@ function showMessage(response) {
     document.getElementById("yesButton").remove();
     document.getElementById("name").remove();
     document.getElementById("no-button").remove();
-    document.getElementById("detailsButton").textContent = "Click for further details...";
-    document.getElementById("detailsButton").style.display = "block";
-    document.getElementById("detailsButton").style.fontStyle = "normal";
+    // document.getElementById("detailsButton").textContent = "Click for further details...";
+    // document.getElementById("detailsButton").style.display = "block";
+    // document.getElementById("detailsButton").style.fontStyle = "normal";
     const videoElement = document.querySelector("video");
     if (videoElement) {
       videoElement.pause();
@@ -137,8 +137,8 @@ function showMessage(response) {
 
 
   }
-  document.getElementById("detailsButton").addEventListener("click", () => {
-      document.getElementById("detailsBox").style.display = "block";
-    });
+  // document.getElementById("detailsButton").addEventListener("click", () => {
+  //     document.getElementById("detailsBox").style.display = "block";
+  //   });
 
 }
