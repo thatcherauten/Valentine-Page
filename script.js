@@ -30,8 +30,7 @@ function showMessage(response) {
     noButton.style.top = randomY + "px";
 
     // Update text content and hide the name message
-    document.getElementById("question").textContent =
-      "😢";
+    document.getElementById("question").textContent = "😢";
     document.getElementById("name").style.display = "none";
 
     // Add a mouseover event listener to the "No" button
@@ -107,6 +106,7 @@ function showMessage(response) {
     // Remove the name message and the "No" button
     document.getElementById("name").remove();
     document.getElementById("no-button").remove();
+    document.getElementById("detailsButton").textContent = "Click for further details...";
     document.getElementById("detailsButton").style.display = "block";
     document.getElemementById("detailsButton").style.fontStyle = "normal";
     const videoElement = document.querySelector("video");
