@@ -78,30 +78,30 @@ function showMessage(response) {
     yesAudio.currentTime = 0;
     yesAudio.play();        // start the yes song
 
-  //   emailjs.send("service_ynddsb9", "template_sxxy8ss", {
-  //     to_email: "thatcherauten@ksu.edu", // her email
-  //     from_name: "Thatcher Auten",
-  //     reply_to: "thatcherauten24@gmail.com",
-  //     message: `
-  //   A message from your bf has been received. Kindly respond at your earliest convenience.
+    emailjs.send("service_ynddsb9", "template_sxxy8ss", {
+      to_email: "thatcherauten@ksu.edu", // her email
+      from_name: "Thatcher Auten",
+      reply_to: "thatcherauten24@gmail.com",
+      message: `
+    A message from your bf has been received. Kindly respond at your earliest convenience.
 
-  //   Your Valentine's Day date with Thatcher Auten has been set! Details can be found below:
+    Your Valentine's Day date with Thatcher Auten has been set! Details can be found below:
 
-  //   Date: February 14, 2026
-  //   Pickup Location: Smurthwaite Scholarship Hall
-  //   Pickup Time: 6:15 PM Central Time
-  //   Reservation Location: UMI Japanese Steakhouse and Sushi Bar
-  //   Reservation Time: 6:30 PM Central Time
-  //   Suggested Attire: Whatever you want you're beautiful af 😍💯
-  //                     (He will be wearing jeans and a lavender linen short-sleeve button-up)
-  // `
-  //   })
-  //     .then(() => {
-  //       console.log("Email sent successfully");
-  //     })
-  //     .catch((error) => {
-  //       console.error("Email failed:", error);
-  //     });
+    Date: February 14, 2026
+    Pickup Location: Smurthwaite Scholarship Hall
+    Pickup Time: 6:15 PM Central Time
+    Reservation Location: UMI Japanese Steakhouse and Sushi Bar
+    Reservation Time: 6:30 PM Central Time
+    Suggested Attire: Whatever you want you're beautiful af 😍💯
+                      (He will be wearing jeans and a lavender linen short-sleeve button-up)
+  `
+    })
+      .then(() => {
+        console.log("Email sent successfully");
+      })
+      .catch((error) => {
+        console.error("Email failed:", error);
+      });
 
     // Remove the name message and the "No" button
     document.getElementById("name").remove();
